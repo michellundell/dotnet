@@ -14,11 +14,11 @@ steps:
   inputs:
     version: '7.x'
     includePreviewVersions: true
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet run'
-  inputs:
-    command: 'run'
-    arguments: '.'
+#- task: DotNetCoreCLI@2
+#  displayName: 'dotnet run'
+#  inputs:
+#    command: 'run'
+#    arguments: '.'
 
-- script: echo Testing
+- script: ls -l
   displayName: 'Testing'
