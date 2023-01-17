@@ -15,10 +15,9 @@ steps:
     version: '6.x'
     includePreviewVersions: true
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
+  displayName: 'dotnet run'
   inputs:
-    command: 'build'
-    configuration: $(buildConfiguration)
+    command: 'run'
 
-- script: dotnet run
-  displayName: 'Run'
+- script: echo Testing
+  displayName: 'Testing'
