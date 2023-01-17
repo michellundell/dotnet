@@ -12,12 +12,13 @@ pool:
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '6.x'
+    version: '7.x'
     includePreviewVersions: true
 - task: DotNetCoreCLI@2
   displayName: 'dotnet run'
   inputs:
     command: 'run'
+    arguments: '.'
 
 - script: echo Testing
   displayName: 'Testing'
